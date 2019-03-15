@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+[class="col-"] {
+  float: left;
+ 
+  }
+
+.col-1 {width: 50%;}
+.colum {
+  width: 100%;
+
+ background-image:url("https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=bench-carved-stones-cemetery-257360.jpg&fm=jpg");
+background-repeat: no-repeat;
+margin:0;
+background-size: cover;
+padding-bottom:49px;
+}
+ul {
+list-style-type: none;
+margin:0;
+
+top:0;
+width:100%;
+overflow:hidden;
+background-color:rgb(0,0,0,.5);
+font-family: 'Roboto', sans-serif;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding:13px 15px;
+}
+st {
+font-weight:bolder;
+}
+li a{
+display:inline-block;
+color:white;
+text-align:center;
+
+text-decoration:none;
+transition: .35s;
+font-weight:300;
+margin:10px;
+float:left;
+font-size:16px;
+}
+li a:hover {
+color:rgb(255,255,255,0.7);
+text-decoration:none;
+
+}
+.mg {
+padding-top:38px;
+padding-left:40px;
+}
+.h3 {
+font-family:roboto;
+font-size:30px;
+}
+.p {
+font-family:roboto;
+font-size:17px;
+font-weight:300;
+}
+.img{
+width:100%; 
+height:auto;
+margin-right:30px;
+margin-left:30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-bottom:.1px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  resize: none;
+}
+.ad {
+border-radius:.25rem;
+background:white;
+text-align:center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+input[type=text] {
+width:80%;
+margin:8px 10px;
+border:none;
+padding:12px 0px;
+border-bottom:.1px solid grey;
+
+}
+
+
+.fa {
+text-align:right;
+
+text-decoration:none;
+}
+.fa:hover {
+ color:rgb(255,255,255,0.7);
+ text-decoration:none;
+}
+.fa:active {
+text-decoration:none;
+}
+.fa-facebook{
+background:transparent;
+color:white;
+font-size:16px;
+}
+.fa-twitter {
+background:transparent;
+color:white;
+font-size:16px;
+}
+.fa-youtube {
+background:transparent;
+color:white;
+font-size:16px;
+}
+.fa-github {
+background:transparent;
+color:white;
+font-size:16px;
+}
+.fa-dribbble {
+background:transparent;
+color:white;
+font-size:16px;
+}
+.fa-google-plus {
+background:transparent;
+color:white;
+font-size:16px;
+}
+.fa-pinterest {
+background:transparent;
+color:white;
+font-size:16px;
+}
+.border {
+border:1px solid;
+padding:5px;
+
+}
+.hr{
+   border: rgba(0, 0, 0, );
+width:2;
+
+}
+
+.font-weight-bold {
+font-weight:700;
+color:white;
+font-size:5.5rem;
+font-family:Roboto;
+}
+.rounded {
+border-radius:.25rem;
+
+}
+.button2 {
+padding: 12px 30px;
+font-size: 11px;
+text-decoration:none;
+border:none;
+background-color:#3f51b5;
+color:#fff;
+font-family:roboto;
+border-radius:.20rem;
+text-align:center;
+font-weight:400;
+box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.button2:visited {
+text-decoration:none;
+color:white;
+}
+.button2:hover {
+color:white;
+text-decoration:none;
+}
+.button2:active {
+color:white;
+text-decoration:none;
+}
+
+.button1{
+border:none;
+background-color:#3f51b5;
+color:#fff;
+text-align:center;
+padding:16px 40px;
+text-decoration:none;
+font-size:13px;
+font-family:roboto;
+border-radius:.25rem;
+box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.button1:visited {
+text-decoration:none;
+color:white;
+}
+.button1:hover {
+color:white;
+text-decoration:none;
+}
+.button1:active {
+color:white;
+text-decoration:none;
+}
+.button {
+border:none;
+background-color:#3f51b5;
+color:#fff;
+text-align:center;
+padding:16px 40px;
+text-decoration:none;
+font-size:14px;
+font-family:roboto;
+border-radius:.25rem;
+box-shadow:0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.button:visited {
+text-decoration:none;
+color:white;
+}
+.button:hover {
+color:white;
+text-decoration:none;
+}
+.button:active {
+color:white;
+text-decoration:none;
+}
+
+.f1 {
+font-size:1.6rem;
+color:white;
+font-family:roboto;
+font-weight:400;
+}
+.check {
+color:rgb(0,0,0,.5);
+padding-bottom:15px;
+}
+.code {
+margin-left:30px;
+    font-weight: bolder;
+    font-size: 35px;
+color: #3f51b5;
+}
+.code:hover {
+color: #3f51b5;
+}
+.abc {
+color:#9e9e9e;
+font-weight:300;
+font-family:Roboto,sans-serif;
+font-size:1.2em;
+padding-left:95px;
+}
+.book {
+font-weight:900;
+color: #2196f3;
+margin-left:30px;
+font-size: 35px;
+}
+.book:hover {
+color: #2196f3;
+}
+.grad {
+font-weight:900;
+font-size:1.5em;
+color:#00bcd4;
+margin-left:30px;
+}
+.grad:hover {
+color:#00bcd4;
+
+}
+.vidh {
+text-align:center; 
+font-size:2rem;
+font-weight:500;
+}
+.cir {
+font-weight: 900;
+color: #3f51b5;
+margin-left:50px;
+font-size: 2.5em;
+}
+.abcd {
+color:#9e9e9e;
+font-weight:300;
+font-family:Roboto,sans-serif;
+font-size:1.2em;
+padding-left:28px;
+}
+
+.ic {
+color:#3f51b5;
+font-size: 2em;
+}
+.he {
+font-weight:300;
+font-size:17px;
+}
+.foot {
+background-color: #1C2331;
+}
+.button3 {
+background:none;
+color:white;
+border:2px solid white;
+border-radius:.20rem;
+text-align:center;
+font-weight:400;
+padding: 12px 30px;
+text-decoration:none;
+font-family:roboto,sans-serif;
+font-size:12px;
+}
+.button3:hover {
+text-decoration:none;
+color:white;
+}
+.button3:active {
+text-decoration:none;
+color:white;
+}
+</style>
+</head>
+<title>MDB</title>
+ <body>
+ <div class="colum">
+   <ul>
+     <div class="container">
+       <li><a href="#" ><st>MDB</st></a></li>
+       <li><a href="#" class="active">Home</a></li>
+       <li><a href="#">About MDB</a></li>
+       <li><a href="#">Free download</a></li>
+       <li><a href="#">Free tutorials</a></li>
+       <li><a href="#" style="padding-left:500px" class="fa fa-facebook"></a></li>
+       <li><a href="#"  class="fa fa-twitter "></a></li>
+       <li><a href="#" class="border rounded padding" style="margin:2px;">  MDB GitHub</a></li>
+     </div>
+   </ul>
+  
+     <div class="container">
+       <div class="col-md-6">
+	 <h1 class="font-weight-bold">Learn Bootstrap 4 with MDB<h1><hr>
+	 <p class="f1">Best & free guide of responsive web design</p>
+	 <p class="f1">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions available. Create your own, stunning website.<br><br>
+	 <a href="https://mdbootstrap.com/education/bootstrap/" button class="button" target="_blank">START FREE TUTORIAL  <i class="fa fa-graduation-cap"></i></button></a>
+       </div>
+       <div class="col-md-6">
+	 <div class="ad">
+	   <h1 style="font-size:30px; color:#4f4f4f; font-family:roboto; padding-top:20px;">Write to us:</h1>
+	   <hr class="hr">
+	   <form>
+	     <i class="fa fa-user" style="color:rgba(0,0,0,0.4); font-size:30px; padding-top:15px;"></i>
+	     <input type="text" placeholder="Your Name" name="fname">
+	   </form>
+	   <form>
+	     <i class="fa fa-envelope" style="color:rgba(0,0,0,0.4); font-size:30px; padding-top:15px;"></i>
+	     <input type="text" placeholder="Your Email" name="fname">
+	   </form>
+	   <form>
+	     <i class="fa fa-pencil" style="color:rgba(0,0,0,0.4); font-size:30px; padding-top:15px;"></i>
+	     <input type="text" class="textarea" placeholder="Your Message" name="fname">
+	     <button class="button1">SEND</button>
+	   </form>  
+	   <hr class="hr">
+	   <form action="#">
+    	     <p>
+               <label class="check">
+        	 <input type="checkbox" >
+        	 <span>Subscribe me to the Newsletter</span>
+      	       </label>
+    	     </p>
+	   </form>
+  	 </div>
+       </div>
+     </div>
+   </div> 
+
+   <div class="container">
+     <div class="col-md-6">
+     <br><br><br>
+       <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img">
+     </div>
+   
+     <div class="col-md-6 mg">
+       <h3 class="h3">Material Design for Bootstrap</h3>
+       <p class="p">This template is created with Material Design for Bootstrap (<st> MDB</st> ) framework.</p>
+       <p class="p">Read details below to learn more about MDB.</p>
+       <hr>
+       <p class="p"><st>400+</st> material UI elements,<st> 600+</st> material icons,<st> 74</st> CSS animations, SASS files, templates, tutorials and many more.<st> Free for personal and commercial use.</st></p><br>
+       <a href="https://mdbootstrap.com/docs/jquery/getting-started/download/" button class="button2" target="_blank">DOWNLOAD  <i style="padding-left:5px; font-size:14px;" class="fa fa-download"></i></button></a>
+       <a style="margin:10px;" href="https://mdbootstrap.com/docs/jquery/components/" button class="button2" target="_blank">LIVE DEMO<i style="padding-left:5px;" class="fa fa-image"></i></button></a>
+     </div>
+   </div>
+   <br><br><br><br>
+   <div class="container">
+     <hr>
+     <br><br>
+     <h3 style="text-align:center; font-size:28px;"><strong>About MDB</strong></h3>
+     <br>
+       <div class="col-md-6">
+	 <h5 style="font-size:25px;"><i class="fa fa-code code"></i><span  class="p" style="padding:25px; font-size:20px;">Bootstrap 4</h5></span>
+	 <p class="abc">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
+	 <br><br>
+	 <h5 style="font-size:25px;"><i class="fa fa-book book"></i><span  class="p" style="padding:30px; font-size:20px;">Detailed documentation 4</h5></span>
+	 <p class="abc">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas easily.</p>
+	 <br><br>
+	 <h5 style="font-size:20px;"><i class="fa fa-graduation-cap grad"></i><span  class="p" style="padding:25px; font-size:20px;">Lots of tutorials</h5>
+	 <p class="abc">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn how to use MDB as well as other technologies.</p>
+       </div>
+       <div class="col-md-6">
+         <h3 class="vidh">Watch our "5 min Quick Start" tutorial</h3>
+	 <iframe width="550" height="345" style="border:none" src="https://www.youtube.com/embed/cXTThxoywNQ">
+</iframe>
+  	 
+       </div>
+     </div>
+   </div>
+     <br><br><br>
+   <div class="container">
+       <hr><br>
+     <h3 style="text-align:center; font-size:28px;"><strong>Not Enough?</strong></h3><br>
+
+     <div class="col-md-4">
+       <div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Free for personal and commercial use</h6>
+<p class="abcd">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.</p>
+	 </div>
+       </div>
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">400+ UI elements</h6>
+<p class="abcd">An impressive collection of flexible components allows you to develop any project.</p>
+	 </div>
+       </div>
+       <div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">600+ icons</h6>
+<p class="abcd">Hundreds of useful, scalable, vector icons at your disposal.</p>
+	 </div>
+       </div>
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Fully responsive</h6>
+<p class="abcd">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB looks great on each screen.</p>
+	 </div>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <img src="mob.png" alt="image" width="100%">
+     </div>
+     <div class="col-md-4">
+       <div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+         </div>
+         <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">70+ CSS animations</h6>
+<p class="abcd">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.</p>	 
+</div>
+       </div>
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+         </div>
+         <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Plenty of useful templates</h6>
+<p class="abcd">Need inspiration? Use one of our predefined templates for free.</p>	 
+</div>
+       </div>
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+         </div>
+         <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Easy installation</h6>
+<p class="abcd">5 minutes, a few clicks and... done. You will be surprised at how easy it is.</p>	 
+</div>
+       </div>
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-check-circle cir"></i>
+         </div>
+         <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Easy to use and customize</h6>
+<p class="abcd">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will easily adjust each component to suit your needs.</p>	 
+</div>
+       </div>
+     </div>
+</div>
+     <br><br>
+     <div class="container">
+     <hr><br>
+     <h3 style="text-align:center; font-size:28px;"><strong>...and even more</strong></h3><br>
+<div class="col-md-3">
+       <div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-firefox ic"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Cross-browser compatibility</h6>
+<p class="abcd">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.</p>
+	 </div>
+</div>
+
+
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-cubes ic"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Modularity</h6>
+<p class="abcd">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as well as modules for CSS (SASS files) and JS.</p>
+	 </div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="row">
+<div class="col-md-2">
+<i class="fa fa-level-up ic"></i>
+</div>
+<div class="col-md-10">
+<h6 class="he" style="padding-left:30px;">Frequent updates</h6>
+<p class="abcd">MDB becomes better every month. We love the project and enhance as much as possible.</p>
+	 </div>
+</div><br><br>
+<div class="row">
+	 <div class="col-md-2">
+	   <i class="fa fa-question ic"></i>
+	 </div>
+	 <div class="col-md-10">
+	   <h6 class="he" style="padding-left:30px;">Technical support</h6>
+<p class="abcd">We care about reliability. If you have any questions - do not hesitate to contact us.</p>
+	 </div>
+</div>
+</div>
+ <div class="col-md-3">
+<div class="row">
+<div class="col-md-2">
+<i class="fa fa-comments ic"></i>
+</div>
+<div class="col-md-10">
+<h6 class="he" style="padding-left:30px;">Activity community</h6>
+<p class="abcd">Our society grows day by day. Visit our forum and check how it is to be a part of our family.</p>
+	 </div>
+</div><br><br>
+<div class="row">
+<div class="col-md-2">
+<i class="fa fa-th ic"></i>
+</div>
+<div class="col-md-10">
+<h6 class="he" style="padding-left:30px;">Flexbox</h6>
+<p class="abcd">MDB fully supports Flex Box. You can forget about alignment issues.</p>
+	 </div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="row">
+<div class="col-md-2">
+<i class="fa fa-code ic"></i>
+</div>
+<div class="col-md-10">
+<h6 class="he" style="padding-left:30px;">jQuery 3.x</h6>
+<p class="abcd">MDB is integrated with newest jQuery. Therefore you can use all the latest features which come along with it.</p>
+	 </div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<i class="fa fa-file-code ic"></i>
+</div>
+<div class="col-md-10">
+<h6 class="he" style="padding-left:30px;">SASS files</h6>
+<p class="abcd">Arranged and well documented .scss files can't wait until you compile them.</p>
+	 </div>
+</div>
+     </div>
+</div>
+<br><br>
+<footer class="container-fluid text-center foot">
+<br>
+<br>
+<a href="https://mdbootstrap.com/docs/jquery/getting-started/download/" button class="button3" target="_blank">DOWNLOAD MDB <i style="padding-left:5px; font-size:14px;" class="fa fa-download"></i></button></a>
+<a href="https://mdbootstrap.com/education/bootstrap/" button class="button3" style="margin-left:10px;" target="_blank">START FREE TUTORIAL  <i class="fa fa-graduation-cap"></i></button></a>
+<br><br><br><br><br>
+<a href="https://twitter.com/MDBootstrap" target="_blank"  class="fa fa-twitter "></a>
+<a href="https://www.facebook.com/mdbootstrap" target="_blank" style="margin-left:20px" class="fa fa-facebook"></a>
+<a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank" style="margin-left:20px" class="fa fa-youtube"></a>
+<a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank" style="margin-left:20px" class="fa fa-google-plus"></a>
+<a href="https://dribbble.com/mdbootstrap" target="_blank" style="margin-left:20px" class="fa fa-dribbble"></a>
+<a href="https://pinterest.com/mdbootstrap" target="_blank" style="margin-left:20px" class="fa fa-pinterest"></a>
+<a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank" style="margin-left:20px" class="fa fa-github"></a>
+<br>
+<br>
+<br>
+</footer>
+
+ </body>
+</html>
